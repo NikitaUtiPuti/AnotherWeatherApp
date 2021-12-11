@@ -13,6 +13,7 @@
 		DB80C6DD2764B58500F45866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB80C6DB2764B58500F45866 /* Main.storyboard */; };
 		DB80C6DF2764B58600F45866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB80C6DE2764B58600F45866 /* Assets.xcassets */; };
 		DB80C6E22764B58600F45866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB80C6E02764B58600F45866 /* LaunchScreen.storyboard */; };
+		DB8B027727653A7400E8389E /* CurrentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B027627653A7400E8389E /* CurrentData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB80C6DE2764B58600F45866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB80C6E12764B58600F45866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB80C6E32764B58600F45866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8B027627653A7400E8389E /* CurrentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				DB80C6D52764B58500F45866 /* AppDelegate.swift */,
 				DB80C6D72764B58500F45866 /* SceneDelegate.swift */,
 				DB80C6D92764B58500F45866 /* ViewController.swift */,
+				DB8B027627653A7400E8389E /* CurrentData.swift */,
 				DB80C6DB2764B58500F45866 /* Main.storyboard */,
 				DB80C6DE2764B58600F45866 /* Assets.xcassets */,
 				DB80C6E02764B58600F45866 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB80C6DA2764B58500F45866 /* ViewController.swift in Sources */,
+				DB8B027727653A7400E8389E /* CurrentData.swift in Sources */,
 				DB80C6D62764B58500F45866 /* AppDelegate.swift in Sources */,
 				DB80C6D82764B58500F45866 /* SceneDelegate.swift in Sources */,
 			);
