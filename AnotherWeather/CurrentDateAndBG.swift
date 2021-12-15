@@ -15,11 +15,11 @@ private let dateFormatter = DateFormatter()
 var currentBackGround : UIImage!
 
 func formatData() {
-dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-dateFormatter.dateStyle = .long
-dateFormatter.locale = Locale(identifier: "ru_RU")
-let dateInFormat = dateFormatter.string(from: Date())
-Currentdata = dateInFormat
+    dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+    dateFormatter.dateStyle = .long
+    dateFormatter.locale = Locale(identifier: "ru_RU")
+    let dateInFormat = dateFormatter.string(from: Date())
+    Currentdata = dateInFormat
 }
 
 func switchBG() {
@@ -40,7 +40,6 @@ func switchBG() {
     case 10:  BGarray = ["autumn_04", "autumn_05", "autumn_06"]
     case 11:  BGarray = ["autumn_07", "autumn_08", "autumn_09"]
     case 12:  BGarray = ["winter_07", "winter_08", "winter_09"]
-            
     default: return
         }
     let backGroundName = BGarray.randomElement()

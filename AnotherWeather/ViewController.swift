@@ -22,9 +22,7 @@ class ViewController: UIViewController {
         
     }
     
-    
     private var currentDataBG = CurrentDateAndBG()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,18 +37,6 @@ class ViewController: UIViewController {
 
     func interfaceUpdate() {
         
-        
-        
-//        let logo = UIImage(named: "солнце")
-//        let imageView = UIImageView(image: logo)
-//        imageView.image = imageView.image!.withRenderingMode(.alwaysTemplate)
-//        imageView.tintColor = UIColor.white
-//        self.weatherIcon = imageView
-//
-//        weatherIcon.image = imageView.image!.withRenderingMode(.alwaysTemplate)
-//        imageView.tintColor = UIColor.white
-//        self.weatherIcon = imageView
-        
         let randomColor = UIColor.init(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1)
         
         weatherIcon.tintColor = randomColor
@@ -61,7 +47,5 @@ class ViewController: UIViewController {
         feelText.textColor = randomColor
         searchButtonOut.backgroundColor = randomColor
     }
-    
-
 }
 
