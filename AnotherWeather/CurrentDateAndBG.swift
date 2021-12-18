@@ -25,6 +25,7 @@ func formatData() {
 func switchBG() {
     
     let currentMonth = Calendar.current.component(.month, from: Date())
+//    let monthStr = Calendar.current.monthSymbols[currentMonth-1]
     var BGarray = [""]
     
     switch currentMonth {

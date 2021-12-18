@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var feelText: UILabel!
     @IBOutlet weak var searchButtonOut: UIButton!
+    @IBOutlet weak var dataDetailButtonOut: UIButton!
     
     var networkWeatherManager = WeatherNetworking()
     lazy var locationManager: CLLocationManager = {
@@ -71,6 +72,7 @@ class ViewController: UIViewController {
             self.currentData.textColor = randomColor
             self.feelText.textColor = randomColor
             self.searchButtonOut.backgroundColor = randomColor
+            self.dataDetailButtonOut.tintColor = randomColor
         }
     }
 }
@@ -101,11 +103,13 @@ extension ViewController: CLLocationManagerDelegate {
 
 
 
-
-//Чем заняться в погоду - добавить
-//Прогноз на 4 дня (по нажатию на кнопку) - добавить
-//Список занятий - добавить
-//Праздники (детали при нажатии на дату) - добавить
+//Экран с описанием дня (либо праздники либо мотивационные рандомные фразочки)
+//Интерфейс второго экрана (через сегвай или класс?)
+//Интерфейс третьего экрана
+//Создание массива несливающихся цветов
+//Прогноз на 4 дня (по нажатию на кнопку) - добавить (alamofire)
+//Праздники (детали при нажатии на дату) - добавить (datetime api network manager)
 //AC на разрешение доступа к геолокации - добавить +++
 //Иконки и лаунчскрин - добавить
 //Рефакторинг по архитектуре
+//Локализация вводимого названия города
