@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var currentBackground: UIImageView!
     @IBOutlet weak var currentData: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
@@ -19,8 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var feelText: UILabel!
     @IBOutlet weak var searchButtonOut: UIButton!
     @IBOutlet weak var dataDetailButtonOut: UIButton!
+    @IBOutlet weak var forecastButtonOut: UIButton!
     
     var networkWeatherManager = WeatherNetworking()
+    var networkForecastManager = ForecastNetworking()
+    
     lazy var locationManager: CLLocationManager = {
         let lm = CLLocationManager()
         lm.delegate = self
@@ -54,11 +57,15 @@ class ViewController: UIViewController {
         currentData.text = String(describing: currentDataBG.Currentdata!)
         currentBackground.image = currentDataBG.currentBackGround
         
-    }
+        }
 
     func interfaceUpdate(weather: WeatherModel) {
         
-        let randomColor = UIColor.init(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1)
+        let colorArray = ["#FF7700", "#FF0500", "#FF00EB", "#0238FF", "#00FDFF", "#48FF1D"]
+        
+        let randomColor = UIColor(hexString: colorArray.randomElement()!)
+        
+//        let randomColor = UIColor.init(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1)
         
         DispatchQueue.main.async {
         self.cityNameLabel.text = weather.cityName
@@ -73,6 +80,17 @@ class ViewController: UIViewController {
             self.feelText.textColor = randomColor
             self.searchButtonOut.backgroundColor = randomColor
             self.dataDetailButtonOut.tintColor = randomColor
+            self.forecastButtonOut.tintColor = randomColor
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ForecastVC" {
+            let NavigationController = segue.destination as! UINavigationController
+            let fvc = NavigationController.topViewController as! ForecastViewController
+            if let city = self.cityNameLabel.text {
+                fvc.city = city
+            } else { return }
         }
     }
 }
@@ -91,8 +109,15 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
+}
 
-
+extension UIColor {
+    convenience init(hexString: String, alpha: CGFloat = 1) {
+        let chars = Array(hexString.dropFirst())
+        self.init(red:   .init(strtoul(String(chars[0...1]),nil,16))/255,
+                  green: .init(strtoul(String(chars[2...3]),nil,16))/255,
+                  blue:  .init(strtoul(String(chars[4...5]),nil,16))/255,
+                  alpha: alpha)}
 }
 
 
@@ -102,14 +127,19 @@ extension ViewController: CLLocationManagerDelegate {
 
 
 
-
-//Экран с описанием дня (либо праздники либо мотивационные рандомные фразочки)
-//Интерфейс второго экрана (через сегвай или класс?)
-//Интерфейс третьего экрана
-//Создание массива несливающихся цветов
-//Прогноз на 4 дня (по нажатию на кнопку) - добавить (alamofire)
-//Праздники (детали при нажатии на дату) - добавить (datetime api network manager)
-//AC на разрешение доступа к геолокации - добавить +++
-//Иконки и лаунчскрин - добавить
+//Экран с деталями дня ++++++++++++++++++++
+//будет две картинки дневная и ночная они будут меняться (на экране с инфой о дне) ++++++++++++++++++++
+//Интерфейс второго экрана ++++++++++++++++++++
+//Интерфейс третьего экрана 
+//Создание массива несливающихся цветов ++++++++++++++++++++
+//Прогноз на 15 дней (по нажатию на кнопку) - добавить ++++++++++++++++++++
+//AC на разрешение доступа к геолокации - добавить ++++++++++++++++++++
+//Иконки и лаунчскрин - добавить ++++++++++++++++
 //Рефакторинг по архитектуре
 //Локализация вводимого названия города
+//Рефакторинг отображения дня на экарне с деталями 
+//Интерфейс к общему виду (шрифты)
+//Иконки в прогнозе и тип запроса в зависимости от города +++++++++++++++
+//Проверка ошибок получения данных отедльным классом
+//Менеджер принимающий значения из джсон, возвращающий названия иконок и форматированное время восхода, заката и даты
+//Попробовать форматировать дату через дэйт форматтер ++++++++++++++

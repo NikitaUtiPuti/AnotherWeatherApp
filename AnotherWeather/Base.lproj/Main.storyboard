@@ -9,54 +9,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Day DetailsVC-->
         <scene sceneID="35f-dK-AD1">
             <objects>
-                <viewController id="Bk1-wk-oER" sceneMemberID="viewController">
+                <viewController id="Bk1-wk-oER" customClass="DayDetailsVC" customModule="AnotherWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dk6-zV-tOU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="481-uk-INV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night" translatesAutoresizingMaskIntoConstraints="NO" id="481-uk-INV">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" red="0.38083613171659386" green="0.83529412749999998" blue="0.81922265420842155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c68-ij-1YI">
-                                <rect key="frame" x="138" y="20" width="138" height="143.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <rect key="frame" x="135" y="20" width="144.5" height="170"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="120"/>
                                 <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Декабря" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIG-TQ-qfa">
-                                <rect key="frame" x="110.5" y="171.5" width="193.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <rect key="frame" x="84" y="198" width="246" height="85"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
                                 <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-bH-Qyc">
-                                <rect key="frame" x="185" y="784" width="44" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="176.5" y="772.5" width="61.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                 <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="339" placeholderIntrinsicHeight="126" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ubx-Sn-SkU">
-                                <rect key="frame" x="32" y="293" width="350" height="256"/>
+                                <rect key="frame" x="32" y="332" width="350" height="178"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="42" text="Сегодня отмечается" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vw-AA-spH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="42" text="Пятница" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vw-AA-spH">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
                                         <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="100" text="Отличный день, чтобы стать лучше" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-2l-oLs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="100" text="21:45" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jP-2l-oLs">
                                         <rect key="frame" x="0.0" y="78" width="350" height="100"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="350" placeholderIntrinsicHeight="42" text="День ВДВ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snh-os-eAW">
-                                        <rect key="frame" x="0.0" y="214" width="350" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
                                         <color key="textColor" red="0.98823523520000001" green="0.99607843159999998" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -83,10 +77,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="24K-q5-Llb"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="481-uk-INV" id="l2v-JJ-QWJ"/>
+                        <outlet property="dayLabel" destination="c68-ij-1YI" id="gq7-cQ-g2t"/>
+                        <outlet property="monthLabel" destination="bIG-TQ-qfa" id="Df5-Va-hUx"/>
+                        <outlet property="timeLabel" destination="8jP-2l-oLs" id="L3M-tW-AdA"/>
+                        <outlet property="weekDayLabel" destination="4vw-AA-spH" id="2vi-Ea-Hjn"/>
+                        <outlet property="yearLabel" destination="Hub-bH-Qyc" id="I7Y-Fv-MyM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JjX-Lr-xdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865.21739130434787" y="-17.410714285714285"/>
+            <point key="canvasLocation" x="-762" y="-17"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -101,8 +103,8 @@
                                 <color key="backgroundColor" red="0.18423935850000001" green="0.87009660879999995" blue="0.89504419189999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-30C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhX-0M-WnI">
-                                <rect key="frame" x="148.5" y="183" width="117.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <rect key="frame" x="138.5" y="183" width="137" height="85"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -115,33 +117,33 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Llk-Db-IuC">
-                                <rect key="frame" x="115" y="251" width="185" height="24"/>
+                                <rect key="frame" x="118" y="276" width="182" height="28.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощущается как:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQp-uc-dkj">
-                                        <rect key="frame" x="0.0" y="2.5" width="122.5" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <rect key="frame" x="0.0" y="3" width="122.5" height="23"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-28С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPJ-Tg-G25">
-                                        <rect key="frame" x="138.5" y="0.0" width="46.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="138.5" y="0.0" width="43.5" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cV-EL-kx1">
-                                <rect key="frame" x="117" y="717" width="180" height="36"/>
+                                <rect key="frame" x="118" y="746.5" width="178" height="42.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-ru-FXE">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="36" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eW2-OW-DCj">
-                                        <rect key="frame" x="130" y="0.0" width="50" height="36"/>
+                                        <rect key="frame" x="128" y="0.0" width="50" height="42.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="0ot-ql-fyI"/>
@@ -164,41 +166,54 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущая дата" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZh-gu-GFe">
-                                <rect key="frame" x="9" y="761" width="180" height="165"/>
+                                <rect key="frame" x="9" y="761" width="235" height="165"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="TlV-Qe-urV"/>
+                                    <constraint firstAttribute="width" constant="235" id="TlV-Qe-urV"/>
                                     <constraint firstAttribute="height" constant="165" id="wgB-UX-yes"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT8-Ww-jH9">
-                                <rect key="frame" x="252" y="824" width="154" height="38"/>
+                                <rect key="frame" x="252" y="824" width="154" height="39.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Об этом дне..." subtitle="">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Bk1-wk-oER" kind="show" id="DJW-VE-XsY"/>
+                                    <segue destination="Bk1-wk-oER" kind="show" identifier="DayDetails" id="DJW-VE-XsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYd-Ot-c1i">
+                                <rect key="frame" x="117" y="428.5" width="180.5" height="39.5"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Подробный прогноз" subtitle="">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3Iq-JE-4Vp" kind="presentation" identifier="ForecastVC" modalPresentationStyle="fullScreen" id="r3D-GQ-jaR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IT8-Ww-jH9" firstAttribute="leading" secondItem="qZh-gu-GFe" secondAttribute="trailing" constant="63" id="0Xo-M5-hP0"/>
+                            <constraint firstItem="IT8-Ww-jH9" firstAttribute="leading" secondItem="qZh-gu-GFe" secondAttribute="trailing" constant="8" id="0Xo-M5-hP0"/>
                             <constraint firstItem="ijs-Li-UQB" firstAttribute="top" secondItem="7ye-tN-RAG" secondAttribute="top" constant="44" id="8Xx-Bd-JRz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qZh-gu-GFe" secondAttribute="trailing" symbolic="YES" id="8ho-22-h4R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IT8-Ww-jH9" secondAttribute="trailing" constant="8" id="BG4-sa-ko8"/>
                             <constraint firstItem="ijs-Li-UQB" firstAttribute="centerX" secondItem="7ye-tN-RAG" secondAttribute="centerX" id="CR8-DM-Ygt"/>
                             <constraint firstItem="IT8-Ww-jH9" firstAttribute="top" secondItem="7ye-tN-RAG" secondAttribute="bottom" constant="-72" id="CSX-ub-sPh"/>
+                            <constraint firstItem="rYd-Ot-c1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EUM-Qx-uFt"/>
                             <constraint firstItem="6cV-EL-kx1" firstAttribute="top" secondItem="Llk-Db-IuC" secondAttribute="bottom" constant="442" id="FMH-pG-0DI"/>
                             <constraint firstItem="VhX-0M-WnI" firstAttribute="centerX" secondItem="7ye-tN-RAG" secondAttribute="centerX" id="GnA-qe-Jcx"/>
                             <constraint firstItem="6cV-EL-kx1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PbP-Vd-mNI"/>
                             <constraint firstItem="7ye-tN-RAG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QCU-u9-kOf"/>
                             <constraint firstItem="7ye-tN-RAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XIi-8s-Kap"/>
+                            <constraint firstItem="rYd-Ot-c1i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dqB-28-uvo"/>
                             <constraint firstAttribute="bottomMargin" secondItem="qZh-gu-GFe" secondAttribute="bottom" constant="-64" id="gQq-GA-IVW"/>
                             <constraint firstItem="7ye-tN-RAG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="msf-k8-4mJ"/>
                             <constraint firstItem="Llk-Db-IuC" firstAttribute="top" secondItem="VhX-0M-WnI" secondAttribute="bottom" constant="8" symbolic="YES" id="qop-SR-6x3"/>
@@ -216,6 +231,7 @@
                         <outlet property="dataDetailButtonOut" destination="IT8-Ww-jH9" id="pHJ-ss-C7J"/>
                         <outlet property="feelTempLabel" destination="gPJ-Tg-G25" id="CTW-jI-SSI"/>
                         <outlet property="feelText" destination="dQp-uc-dkj" id="bRl-cP-50h"/>
+                        <outlet property="forecastButtonOut" destination="rYd-Ot-c1i" id="zO0-bN-9fZ"/>
                         <outlet property="searchButtonOut" destination="eW2-OW-DCj" id="QHi-WI-Jwf"/>
                         <outlet property="temperatureLabel" destination="VhX-0M-WnI" id="xS2-6R-OO5"/>
                         <outlet property="weatherIcon" destination="ijs-Li-UQB" id="ecv-2V-gOi"/>
@@ -225,9 +241,106 @@
             </objects>
             <point key="canvasLocation" x="-114.49275362318842" y="-16.741071428571427"/>
         </scene>
+        <!--Прогноз погоды-->
+        <scene sceneID="lgN-aK-xq6">
+            <objects>
+                <tableViewController id="gy9-KV-wTM" customClass="ForecastViewController" customModule="AnotherWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KoH-ZN-DC4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForecastCell" rowHeight="120" id="Qjr-Vz-f4Z" customClass="ForecastCell" customModule="AnotherWeather" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qjr-Vz-f4Z" id="jYH-8o-9gW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-12-26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pco-bw-iyC">
+                                            <rect key="frame" x="166.5" y="11" width="81" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zne-kv-Mw2">
+                                            <rect key="frame" x="50" y="35" width="47.5" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="снег" translatesAutoresizingMaskIntoConstraints="NO" id="4Ia-Oc-xMZ">
+                                            <rect key="frame" x="299" y="27" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="R5B-jD-gul"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Ia-Oc-xMZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zne-kv-Mw2" secondAttribute="trailing" constant="8" symbolic="YES" id="1FW-IU-dUe"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4Ia-Oc-xMZ" secondAttribute="trailing" constant="30" id="HYB-Rn-uyB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4Ia-Oc-xMZ" secondAttribute="bottom" constant="17" id="Ook-Qy-buf"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zne-kv-Mw2" secondAttribute="bottom" constant="24" id="XAr-58-2IE"/>
+                                        <constraint firstItem="Zne-kv-Mw2" firstAttribute="top" secondItem="jYH-8o-9gW" secondAttribute="topMargin" constant="24" id="Z8H-r5-eLp"/>
+                                        <constraint firstItem="4Ia-Oc-xMZ" firstAttribute="top" secondItem="jYH-8o-9gW" secondAttribute="topMargin" constant="16" id="a7U-M7-rs9"/>
+                                        <constraint firstItem="pco-bw-iyC" firstAttribute="centerX" secondItem="jYH-8o-9gW" secondAttribute="centerX" id="rLp-oL-HT9"/>
+                                        <constraint firstItem="Zne-kv-Mw2" firstAttribute="leading" secondItem="jYH-8o-9gW" secondAttribute="leadingMargin" constant="30" id="uip-Sj-XDs"/>
+                                        <constraint firstItem="pco-bw-iyC" firstAttribute="top" secondItem="jYH-8o-9gW" secondAttribute="top" constant="11" id="w4f-f9-k9F"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="datetimeLabel" destination="pco-bw-iyC" id="IEe-CU-BEA"/>
+                                    <outlet property="iconImageView" destination="4Ia-Oc-xMZ" id="ATO-cC-ZRp"/>
+                                    <outlet property="tempLabel" destination="Zne-kv-Mw2" id="8kT-ns-ihD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="gy9-KV-wTM" id="m1V-YE-He3"/>
+                            <outlet property="delegate" destination="gy9-KV-wTM" id="Lz3-fb-LJe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Прогноз погоды" id="0nK-wk-2Bb">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="eGe-sd-Mee">
+                            <connections>
+                                <action selector="backBarButton:" destination="gy9-KV-wTM" id="9xJ-S4-nZl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="KoH-ZN-DC4" id="B36-Kk-WIx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1f-DU-lfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.608695652174" y="-17.410714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kIX-uF-uTz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Iq-JE-4Vp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="biT-Dy-q9m"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0a-3y-tve">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gy9-KV-wTM" kind="relationship" relationship="rootViewController" id="i0k-Sh-Zwk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Dk-D7-vGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="-17"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="night" width="914" height="1560"/>
+        <image name="снег" width="150" height="150"/>
         <image name="солнце" width="120" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

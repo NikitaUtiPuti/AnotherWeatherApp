@@ -10,22 +10,26 @@ import UIKit
 
 class CurrentDateAndBG {
 
+    
 var Currentdata: String!
 private let dateFormatter = DateFormatter()
 var currentBackGround : UIImage!
 
 func formatData() {
+    
+    let date = Date()
     dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
     dateFormatter.dateStyle = .long
     dateFormatter.locale = Locale(identifier: "ru_RU")
-    let dateInFormat = dateFormatter.string(from: Date())
+    let dateInFormat = dateFormatter.string(from: date)
     Currentdata = dateInFormat
-}
 
-func switchBG() {
+}
+    
+    func switchBG() {
     
     let currentMonth = Calendar.current.component(.month, from: Date())
-//    let monthStr = Calendar.current.monthSymbols[currentMonth-1]
+
     var BGarray = [""]
     
     switch currentMonth {
@@ -45,6 +49,6 @@ func switchBG() {
         }
     let backGroundName = BGarray.randomElement()
     currentBackGround = UIImage(named: backGroundName!)
+        }
     }
 
-}
