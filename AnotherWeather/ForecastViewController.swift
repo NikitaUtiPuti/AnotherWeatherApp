@@ -17,12 +17,15 @@ class ForecastViewController: UITableViewController {
     private var forecasts = [CurrentConditions]()
     var city = ""
     var formatter = ForecastFormatter()
+    var interfaceChanger = DayOrNight()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.backgroundImage = UIImage(named: "night")
+        interfaceChanger.backgroundSwitch(image: tableView.backgroundView as! UIImageView, title: navigationController!.navigationBar)
         fetchDayForecasts()
-        
+    
     }
     
     func fetchDayForecasts() {
@@ -56,15 +59,16 @@ class ForecastViewController: UITableViewController {
         cell.iconImageView.image = UIImage(named: "")
         
         formatter.format(cell: cell,forecast: forecast)
-    }
-    
-
+      
+        interfaceChanger.cellSwitchTextColor(cell: cell, image: tableView.backgroundView as! UIImageView)
+        }
+       
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return forecasts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell") as! ForecastCell
         
         configureCell(cell: cell, for: indexPath)
@@ -77,5 +81,15 @@ fileprivate func delay(_ delay: Int, closure: @escaping () -> ()) {
     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay)) {
         closure()
     }
+}
 
+extension UITableView {
+    @IBInspectable var backgroundImage: UIImage? {
+        get {
+            return nil
+        }
+        set {
+            backgroundView = UIImageView(image: newValue)
+        }
+    }
 }

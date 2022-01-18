@@ -18,6 +18,7 @@
 		DB80C6DF2764B58600F45866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB80C6DE2764B58600F45866 /* Assets.xcassets */; };
 		DB80C6E22764B58600F45866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB80C6E02764B58600F45866 /* LaunchScreen.storyboard */; };
 		DB8B027727653A7400E8389E /* CurrentDateAndBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B027627653A7400E8389E /* CurrentDateAndBG.swift */; };
+		DB9DEF262796F57600EBCE80 /* DayOrNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9DEF252796F57600EBCE80 /* DayOrNight.swift */; };
 		DBA4B942277884C200BE4E09 /* ForecastNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4B941277884C200BE4E09 /* ForecastNetworking.swift */; };
 		DBA4B94427788C5300BE4E09 /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4B94327788C5300BE4E09 /* ForecastData.swift */; };
 		DBA4B94627788EAC00BE4E09 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4B94527788EAC00BE4E09 /* ForecastModel.swift */; };
@@ -43,6 +44,7 @@
 		DB80C6E12764B58600F45866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB80C6E32764B58600F45866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8B027627653A7400E8389E /* CurrentDateAndBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateAndBG.swift; sourceTree = "<group>"; };
+		DB9DEF252796F57600EBCE80 /* DayOrNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOrNight.swift; sourceTree = "<group>"; };
 		DBA4B941277884C200BE4E09 /* ForecastNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastNetworking.swift; sourceTree = "<group>"; };
 		DBA4B94327788C5300BE4E09 /* ForecastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
 		DBA4B94527788EAC00BE4E09 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				DBD29FE4276B2734008A28F8 /* WeatherModel.swift */,
 				DBD29FE6276B3159008A28F8 /* WeatherNetworking.swift */,
 				DB27BB7C2770B48B00CD7F39 /* Day.swift */,
+				DB9DEF252796F57600EBCE80 /* DayOrNight.swift */,
 				DB13397827946F07003F2269 /* ForecastFormatter.swift */,
 				DBA4B94327788C5300BE4E09 /* ForecastData.swift */,
 				DBA4B94527788EAC00BE4E09 /* ForecastModel.swift */,
@@ -194,6 +197,7 @@
 				DBD29FE5276B2734008A28F8 /* WeatherModel.swift in Sources */,
 				DBA714E9277003060091EF1F /* DayDetailsVC.swift in Sources */,
 				DB80C6D62764B58500F45866 /* AppDelegate.swift in Sources */,
+				DB9DEF262796F57600EBCE80 /* DayOrNight.swift in Sources */,
 				DBD29FE3276B26FD008A28F8 /* WeatherData.swift in Sources */,
 				DBA4B942277884C200BE4E09 /* ForecastNetworking.swift in Sources */,
 				DB80C6D82764B58500F45866 /* SceneDelegate.swift in Sources */,

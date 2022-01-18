@@ -17,6 +17,7 @@ class DayDetailsVC: UIViewController {
     @IBOutlet weak var weekDayLabel: UILabel!
     
     let calendar = Calendar.current
+    let interfaceChanger = DayOrNight()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,18 +92,28 @@ class DayDetailsVC: UIViewController {
         yearLabel.textColor = color
         }
         
-        if calendar.component(.hour, from: Date()) <= 6 {
-            backgroundImage.image = UIImage(named: "night")
-            color = UIColor.white
-            textColorChange()
-        } else if calendar.component(.hour, from: Date()) >= 19 {
-            backgroundImage.image = UIImage(named: "night")
-            color = UIColor.white
-            textColorChange()
+        interfaceChanger.backgroundSwitch(image: backgroundImage, title: navigationController?.navigationBar)
+        if backgroundImage == UIImage(named: "night") {
+            color = .white
         } else {
-            backgroundImage.image = UIImage(named: "day")
-            color = UIColor.black
-            textColorChange()
+            color = .black
         }
+        
+        textColorChange()
+        
+        
+//        if calendar.component(.hour, from: Date()) <= 6 {
+//            backgroundImage.image = UIImage(named: "night")
+//            color = UIColor.white
+//            textColorChange()
+//        } else if calendar.component(.hour, from: Date()) >= 19 {
+//            backgroundImage.image = UIImage(named: "night")
+//            color = UIColor.white
+//            textColorChange()
+//        } else {
+//            backgroundImage.image = UIImage(named: "day")
+//            color = UIColor.black
+//            textColorChange()
+//        }
     }
 }
